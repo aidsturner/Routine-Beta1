@@ -1,1 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+nav h1 {
+  margin: 0 0 10px 0;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
