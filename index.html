@@ -5,19 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Routine</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="site.css">
+    <script src="calendar.js" defer></script>
 </head>
 <body>
-    <nav>
-      <h1>Routine</h1>
-      <a href="index.html">Calendar</a>
-      <a href="page-2.html">Profile</a>
-      <a href="page-3.html">Events</a>
-      <a href="page-4.html">Social</a>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="profile.html">PROFILE</a>
+            <a href="calendar.html">CALENDAR</a>
+            <a href="events.html">EVENTS</a>
+            <a href="social.html">SOCIAL</a>
+        </div>
     </nav>
-<section>
-    <h2>Calendar</h2>
-    <p>for dates and times</p>
-</section>
+
+    <nav class="notification">
+        <div class="notif-bell">
+            <img src="bel.png" alt="Notification Bell" width="50" height="50">
+        </div>
+    </nav>
+
+<main>
+    <div class="card">
+        <div class="wrapper">
+        <header>
+         <p class="current-date"></p>
+         </header>
+          <div class="calendar">
+            <ul class="weeks">
+             <li>Sun</li>
+             <li>Mon</li>
+             <li>Tue</li>
+             <li>Wed</li>
+             <li>Thu</li>
+             <li>Fri</li>
+             <li>Sat</li>
+           </ul>
+           <ul class="days"></ul>
+          </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer">
+    <p>@2026 Routine. All rights reserved.</p>
+    <h2>Contact Us:</h2>
+    <p>Email: routine@gmail.com</p>
+    </div>
+</footer>
+
 </body>
 </html>
