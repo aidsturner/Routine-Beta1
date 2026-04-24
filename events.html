@@ -25,7 +25,64 @@
 <main>
     <div class="card">
         <h1>Events</h1>
+
+        <!-- Add Event Form -->
+        <div class="add-event">
+            <input type="text" id="eventName" placeholder="Event name">
+            <input type="date" id="eventDate">
+            <input type="time" id="eventTime">
+            <button onclick="addEvent()">Add Event</button>
+        </div>
+
+        <!-- Events List -->
+        <div class="events-list" id="eventsList">
+            <div class="event-item">
+                <h2>Study Group</h2>
+                <p>April 28, 2026 • 3:00 PM</p>
+            </div>
+
+            <div class="event-item">
+                <h2>Gym Session</h2>
+                <p>April 30, 2026 • 6:00 PM</p>
+            </div>
+
+            <div class="event-item">
+                <h2>Club Meeting</h2>
+                <p>May 2, 2026 • 5:30 PM</p>
+            </div>
+        </div>
     </div>
+
+    <!-- JavaScript -->
+    <script>
+    function addEvent() {
+        const name = document.getElementById("eventName").value;
+        const date = document.getElementById("eventDate").value;
+        const time = document.getElementById("eventTime").value;
+
+        if (!name || !date || !time) {
+            alert("Fill everything out");
+            return;
+        }
+
+        const eventList = document.getElementById("eventsList");
+
+        const eventItem = document.createElement("div");
+        eventItem.classList.add("event-item");
+
+        eventItem.innerHTML = `
+            <h2>${name}</h2>
+            <p>${date} • ${time}</p>
+        `;
+
+        eventList.appendChild(eventItem);
+
+        // clear inputs
+        document.getElementById("eventName").value = "";
+        document.getElementById("eventDate").value = "";
+        document.getElementById("eventTime").value = "";
+    }
+    </script>
 </main>
 
     <footer class="footer">
