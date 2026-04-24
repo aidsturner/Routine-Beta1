@@ -192,11 +192,11 @@ header .current-date{
     font-size: 14px;
 }
 .events-list {
-    width: 60%;
-    margin: 40px auto;
-    background-color: #f5f5f5;
+    width: 100%;
+    background-color: #efefef;
     padding: 20px;
     border-radius: 15px;
+}
 }
 
 .event-item {
@@ -238,4 +238,31 @@ header .current-date{
     background-color: #efefef;
     padding: 20px;
     border-radius: 15px;
+}
+.add-event {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.add-event input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+}
+
+.add-event button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-event button:hover {
+    background-color: #444;
 }
