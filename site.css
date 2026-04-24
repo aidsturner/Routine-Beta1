@@ -191,3 +191,51 @@ header .current-date{
     padding: 15px 30px;
     font-size: 14px;
 }
+.events-list {
+    width: 60%;
+    margin: 40px auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.event-item {
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-item h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.event-item p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+.card {
+    background-color: #d9d9d9;
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* LEFT ALIGN */
+}
+
+.card h1 {
+    margin-bottom: 20px;
+}
+
+.events-list {
+    width: 100%;
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 15px;
+}
